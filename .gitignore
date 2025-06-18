@@ -1,0 +1,27 @@
+# Entornos virtuales
+wildfires/
+.env/
+*.env
+
+# Archivos temporales y cachés de Python
+*__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Archivos de configuración del entorno
+.envrc
+*.sqlite3
+*.log
+
+# Archivos de configuración de herramientas
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+coverage.xml
+htmlcov/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
