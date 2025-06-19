@@ -27,7 +27,7 @@ Wildfires are increasing in frequency and intensity, threatening ecosystems, inf
 
 ## Project Architecture
 
-To be soon
+![alt text](./data/arquitecture.gif)
 
 ## 🔐 Responsible AI Commitments
 
@@ -50,9 +50,9 @@ To be soon
 This tool is intended for wildfire monitoring and decision support. It does not replace official emergency services. Use responsibly.
 
 ## 👥 Team
-- [Andres Moreno](https://github.com/RobertDalton)
 - [Jair Nieto](https://github.com/CJ-Nieto)
-- []
+- [Andrés Moreno](https://github.com/RobertDalton)
+- [Kevin Góngora](https://github.com/kevinjordanuc)
 
 ## 📬 Feedback & Issues
 Please [open an issue](https://github.com/...) or contact us.
