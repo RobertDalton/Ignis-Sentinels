@@ -1,1 +1,57 @@
-# Ignis-Sentinels
+# 🔥 Ignis-Sentinels: Near Real-Time Wildfire Resilience Platform
+
+## 🌍 Mission
+Our mission is to develop a cutting-edge wildfire resilience platform that predicts fire behavior, assesses risks, optimizes response strategies, and delivers actionable insights — empowering emergency responders, planners, and policymakers to protect lives, property, and ecosystems.
+
+## 🚨 Challenge: Wildfire Resilience
+Wildfires are increasing in frequency and intensity, threatening ecosystems, infrastructure, and communities. Our solution addresses this by:
+
+- Predicting wildfire spread and intensity using near real-time data and AI.
+- Assessing risks to infrastructure, natural resources, and populations.
+- Recommending optimal resource allocation and evacuation strategies.
+- Providing interpretable, actionable insights to decision-makers.
+
+## 🧠 Features
+- **AI-Powered Fire Detection**: Near real-time satellite data processed with ML models trained on diverse datasets to reduce bias.
+- **Risk Assessment Dashboard**: Interactive map with fire perimeters, wind, terrain, and infrastructure overlays.
+- **Agent-Based Interaction**: Each AI agent has a defined role and only responds to wildfire-related prompts.
+- **Cross-Platform Access**: Interfaces accessible via web and mobile.
+- **Secure Access**: Only emergency contact and fire-related data is stored.
+
+## 🛠️ Tech Stack
+- **Frontend**: React + Strimlit + Mapbox
+- **Backend**: Node.js + Python + CosmosDB
+- **AI Models**: Custom wildfire classifiers
+- **Data Sources**: MODIS, VIIRS S-NPP, VIIRS NOAA-20, VIIRS NOAA-21
+
+## Project Architecture
+
+Image
+
+## 🔐 Responsible AI Commitments
+
+| Principle       | Implementation                                                                 |
+|----------------|----------------------------------------------------------------------------------|
+| **Fairness**    | Trained on diverse geospatial and climatic data to reduce regional bias.        |
+| **Reliability** | Includes prediction confidence scores and system performance validation.        |
+| **Privacy**     | No personal data collected; only emergency contacts and fire-related metadata.  |
+| **Inclusivity** | Interfaces are WCAG-compliant and usable by both experts and the general public.|
+| **Transparency**| Near real-time fire reports, agent cards, and full event traceability.               |
+| **Accountability** | Team listed in repo, disclaimer included, and contact form for issue reporting.|
+
+## 📊 Metrics & Monitoring
+- Fire Radiative Power (FRP)
+- Brightness vs. Bright_T31 anomaly detection
+- Model confidence thresholds
+- System latency and uptime logs
+
+## 📎 Disclaimer
+This tool is intended for wildfire monitoring and decision support. It does not replace official emergency services. Use responsibly.
+
+## 👥 Team
+- [Jair Nieto](https://github.com/CJ-Nieto)
+- [Andrés Moreno](https://github.com/RobertDalton)
+- [Kevin Góngora](https://github.com/kevinjordanuc)
+
+## 📬 Feedback & Issues
+Please [open an issue](https://github.com/RobertDalton/Ignis-Sentinels) or contact us via the form on...
