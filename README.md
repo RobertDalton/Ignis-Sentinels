@@ -54,4 +54,4 @@ This tool is intended for wildfire monitoring and decision support. It does not 
 - [Kevin Góngora](https://github.com/kevinjordanuc)
 
 ## 📬 Feedback & Issues
-Please [open an issue](https://github.com/RobertDalton/Ignis-Sentinels) or contact us via the form on...
+Please [open an issue](https://github.com/RobertDalton/Ignis-Sentinels/issues) or contact us.
