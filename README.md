@@ -22,7 +22,7 @@ Wildfires are increasing in frequency and intensity, threatening ecosystems, inf
 - **Frontend**: React + Strimlit + Mapbox
 - **Backend**: Node.js + Python + CosmosDB
 - **AI Models**: Custom wildfire classifiers
-- **Data Sources**: MODIS, VIIRS S-NPP, VIIRS NOAA-20, VIIRS NOAA-21
+- **Data Sources**: NASA's Fire Information for Resource Management System (FIRMS) MODIS, VIIRS S-NPP, VIIRS NOAA-20, VIIRS NOAA-21
 
 ## Project Architecture
 
