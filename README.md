@@ -28,6 +28,11 @@ Wildfires are increasing in frequency and intensity, threatening ecosystems, inf
 
 ![alt text](./data/arquitecture.gif)
 
+## Video Demo and Slides 
+- Video: https://youtu.be/9oH7Su1_jtM
+- PPT Slides: https://docs.google.com/presentation/d/1_rBSrRaq27KAtp0PPKlCQBqJ95p1MWdU/edit?pli=1&slide=id.p3#slide=id.p3
+
+
 ## 🔐 Responsible AI Commitments
 
 | Principle       | Implementation                                                                 |
