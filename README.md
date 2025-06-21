@@ -1,4 +1,4 @@
-# 🔥 Ignis-Sentinels: Near Real-Time Wildfire Resilience Platform
+# 🔥 Ignis Sentinels: Near Real-Time Multi-Agent Wildfire Resilience Platform
 
 ## 🌍 Mission
 Our mission is to develop a cutting-edge wildfire resilience platform that predicts fire behavior, assesses risks, optimizes response strategies, and delivers actionable insights — empowering emergency responders, planners, and policymakers to protect lives, property, and ecosystems.
@@ -16,17 +16,17 @@ Wildfires are increasing in frequency and intensity, threatening ecosystems, inf
 - **Risk Assessment Dashboard**: Interactive map with fire perimeters, wind, terrain, and infrastructure overlays.
 - **Agent-Based Interaction**: Each AI agent has a defined role and only responds to wildfire-related prompts.
 - **Cross-Platform Access**: Interfaces accessible via web and mobile.
-- **Secure Access**: Only emergency contact and fire-related data is stored.
 
 ## 🛠️ Tech Stack
-- **Frontend**: React + Strimlit + Mapbox
-- **Backend**: Node.js + Python + CosmosDB
-- **AI Models**: Custom wildfire classifiers
-- **Data Sources**: NASA's Fire Information for Resource Management System (FIRMS) MODIS, VIIRS S-NPP, VIIRS NOAA-20, VIIRS NOAA-21
+- **Frontend**: Streamlit , Deck.gl
+- **Backend**: Python (FastAPI) + CosmosDB
+- **AI Models**: agentpy + OpenAI Models
+- **Data Sources**: NASA FIRMS, OpenWeatherMap, Sentinel-2, VIIRS
+- **Infra**: Azure Functions + Azure AI Foundry
 
 ## Project Architecture
 
-Image
+![alt text](./data/arquitecture.gif)
 
 ## 🔐 Responsible AI Commitments
 
@@ -54,4 +54,4 @@ This tool is intended for wildfire monitoring and decision support. It does not 
 - [Kevin Góngora](https://github.com/kevinjordanuc)
 
 ## 📬 Feedback & Issues
-Please [open an issue](https://github.com/RobertDalton/Ignis-Sentinels/issues) or contact us.
+Please [open an issue](https://github.com/...) or contact us.
