@@ -1,8 +1,7 @@
 import agentpy as ap
-
+from azure.storage.blob import BlobServiceClient, ContainerClient, BlobClient
 import matplotlib.pyplot as plt
-import seaborn as sns
-
+import json
 
 class ForestModel(ap.Model):
 
@@ -11,7 +10,6 @@ class ForestModel(ap.Model):
         n_trees = int(self.p['Tree density'] * (self.p.size**2))
         trees = self.agents = ap.AgentList(self, n_trees)
 
-        # Create grid (forest)
         self.forest = ap.Grid(self, [self.p.size]*2, track_empty=True)
         self.forest.add_agents(trees, random=True, empty=True)
 
@@ -49,17 +47,48 @@ def animation_plot(model, ax):
                  f"{len(model.agents.select(model.agents.condition == 0))}")
 
 
+def generate_animation(**parameters):
 
-def generate_animation():
-
-    parameters = {
-    'Tree density': 0.6, 
-    'size': 50, 
-    'steps': 100,
-    }
 
     fig, ax = plt.subplots()
-    model = ForestModel(parameters)
+    model = ForestModel(**parameters)
     animation = ap.animate(model, fig, ax, animation_plot)
     return animation
 
+
+
+def upload_json_to_blob_storage(
+    json_data: dict,
+    blob_name: str,
+    connection_string: str = None,
+    container_name: str = "container-name"
+) -> str:
+
+    if connection_string is None:
+        connection_string = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
+        if not connection_string:
+            raise ValueError
+    try:
+        blob_service_client = BlobServiceClient.from_connection_string(connection_string)
+
+        container_client = blob_service_client.get_container_client(container_name)
+
+        try:
+            container_client.create_container()
+            print(f"Contenedor '{container_name}' creado (si no existía).")
+        except Exception as e:
+            if "ContainerAlreadyExists" not in str(e):
+                print(f"Advertencia al crear el contenedor (posiblemente ya existe): {e}")
+
+        blob_client = container_client.get_blob_client(blob_name)
+
+        json_string = json.dumps(json_data, indent=4) # indent=4 para una salida JSON legible
+
+        blob_client.upload_blob(json_string, overwrite=True) # overwrite=True para reemplazar si ya existe
+
+
+        return blob_client.url
+
+    except Exception as e:
+        print(f"Error al subir el JSON a Blob Storage: {e}")
+        return ""

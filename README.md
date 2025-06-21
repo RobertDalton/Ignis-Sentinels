@@ -16,7 +16,6 @@ Wildfires are increasing in frequency and intensity, threatening ecosystems, inf
 - **Risk Assessment Dashboard**: Interactive map with fire perimeters, wind, terrain, and infrastructure overlays.
 - **Agent-Based Interaction**: Each AI agent has a defined role and only responds to wildfire-related prompts.
 - **Cross-Platform Access**: Interfaces accessible via web and mobile.
-- **Secure Access**: Requires account login (email + password); only emergency contact and fire-related data is stored.
 
 ## 🛠️ Tech Stack
 - **Frontend**: Streamlit , Deck.gl
