@@ -1,5 +1,7 @@
 # 🔥 Ignis Sentinels: Near Real-Time Multi-Agent Wildfire Resilience Platform
 
+🏅 **3rd Place – Microsoft Innovation Challenge June 2025**
+
 ## 🌍 Mission
 Our mission is to develop a cutting-edge wildfire resilience platform that predicts fire behavior, assesses risks, optimizes response strategies, and delivers actionable insights — empowering emergency responders, planners, and policymakers to protect lives, property, and ecosystems.
 
@@ -54,8 +56,8 @@ Wildfires are increasing in frequency and intensity, threatening ecosystems, inf
 This tool is intended for wildfire monitoring and decision support. It does not replace official emergency services. Use responsibly.
 
 ## 👥 Team
-- [Jair Nieto](https://github.com/CJ-Nieto)
 - [Andrés Moreno](https://github.com/RobertDalton)
+- [Jair Nieto](https://github.com/CJ-Nieto)
 - [Kevin Góngora](https://github.com/kevinjordanuc)
 
 ## 📬 Feedback & Issues
